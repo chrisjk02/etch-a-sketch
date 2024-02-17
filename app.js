@@ -13,3 +13,6 @@ for (let i = 0; i < 16; i++) {
 
     container.appendChild(row);
 }
+
+//event listener to change color on hover
+const active = document.querySelectorAll('div.column');
