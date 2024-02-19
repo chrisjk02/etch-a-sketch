@@ -15,4 +15,9 @@ for (let i = 0; i < 16; i++) {
 }
 
 //event listener to change color on hover
-const active = document.querySelectorAll('div.column');
+const columns = document.querySelectorAll(".column");
+for (let box of columns) {
+    box.addEventListener('mouseover', () => {
+        box.style.backgroundColor = 'black';
+    })
+}
