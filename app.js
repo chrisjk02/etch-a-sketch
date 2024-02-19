@@ -33,6 +33,7 @@ function resetGrid() {
         container.removeChild(container.firstChild);
     }
 }
+
 const reset = document.querySelector("#reset");
 reset.addEventListener('click', () => {
     resetGrid();
