@@ -21,3 +21,5 @@ for (let box of columns) {
         box.style.backgroundColor = 'black';
     })
 }
+
+const reset = document.querySelector("#reset");
