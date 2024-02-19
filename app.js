@@ -15,15 +15,21 @@ function generateGrid (numOfSquares) {
     
         container.appendChild(row);
     }
+
+    //event listener to change color on hover
+    const columns = document.querySelectorAll(".column");
+    for (let box of columns) {
+        box.addEventListener('mouseover', () => {
+            box.style.backgroundColor = 'black';
+        })
+    }
 }
 
 
-//event listener to change color on hover
-const columns = document.querySelectorAll(".column");
-for (let box of columns) {
-    box.addEventListener('mouseover', () => {
-        box.style.backgroundColor = 'black';
-    })
-}
+
 
 const reset = document.querySelector("#reset");
+reset.addEventListener('click', () => {
+    let input = parseInt(prompt("Enter a number:"));
+    generateGrid(input);
+})
