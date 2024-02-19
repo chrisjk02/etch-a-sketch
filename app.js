@@ -19,7 +19,7 @@ function generateGrid (numOfSquares) {
     //event listener to change color on hover
     const columns = document.querySelectorAll(".column");
     for (let box of columns) {
-        box.addEventListener('mouseover', () => {
+            box.addEventListener('mouseover', () => {
             box.style.backgroundColor = 'black';
         })
     }
@@ -27,9 +27,15 @@ function generateGrid (numOfSquares) {
 
 
 
-
+function resetGrid() {
+    const container = document.querySelector('.container');
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
 const reset = document.querySelector("#reset");
 reset.addEventListener('click', () => {
+    resetGrid();
     let input = parseInt(prompt("Enter a number:"));
     generateGrid(input);
 })
