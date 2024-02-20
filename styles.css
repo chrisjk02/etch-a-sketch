@@ -30,3 +30,9 @@ html {
     height: 50px;
     flex: 1;
 }
+
+#reset {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}

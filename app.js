@@ -37,6 +37,6 @@ function resetGrid() {
 const reset = document.querySelector("#reset");
 reset.addEventListener('click', () => {
     resetGrid();
-    let input = parseInt(prompt("Enter a number:"));
+    let input = parseInt(prompt("Enter a number (less than 100):"));
     generateGrid(input);
 })
